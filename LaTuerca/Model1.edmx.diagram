@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="002add4d67e74d3a9c8f0d1939455f29" Name="Diagram1" ZoomLevel="87">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Clientes" Width="1.5" PointX="8" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Menus" Width="1.5" PointX="10.375" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Marcas" Width="1.5" PointX="4.125" PointY="6.375" />
+        <EntityTypeShape EntityType="Model.Proveedors" Width="1.5" PointX="9.375" PointY="6" />
+        <EntityTypeShape EntityType="Model.Repuestoes" Width="1.5" PointX="6.75" PointY="5.75" />
+        <AssociationConnector Association="Model.FK_dbo_Repuestoes_dbo_Marcas_Marca_Id" />
+        <AssociationConnector Association="Model.FK_dbo_Repuestoes_dbo_Proveedors_Proveedor_Id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
