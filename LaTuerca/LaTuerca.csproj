@@ -178,6 +178,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InvoiceDetailsController.cs" />
+    <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MarcasController.cs" />
     <Compile Include="Controllers\MenusController.cs" />
@@ -243,6 +245,14 @@
     <Compile Include="Migrations\201604190333031_AddRelationships1.Designer.cs">
       <DependentUpon>201604190333031_AddRelationships1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605031943163_AddInvoceTable.cs" />
+    <Compile Include="Migrations\201605031943163_AddInvoceTable.Designer.cs">
+      <DependentUpon>201605031943163_AddInvoceTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605031959182_AddInvoceDetailTable.cs" />
+    <Compile Include="Migrations\201605031959182_AddInvoceDetailTable.Designer.cs">
+      <DependentUpon>201605031959182_AddInvoceDetailTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -262,6 +272,8 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\InvoiceDetail.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Models\Menu.cs" />
@@ -275,6 +287,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\InvoiceViewModel.cs" />
     <Compile Include="ViewModels\RepuestoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -304,6 +317,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -314,6 +328,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\typehead.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -378,6 +393,17 @@
     <Content Include="Views\Repuestos\Index.cshtml" />
     <Content Include="Views\Shared\_create_proveedor.cshtml" />
     <Content Include="Views\Shared\_create_marca.cshtml" />
+    <Content Include="Views\Invoices\Create.cshtml" />
+    <Content Include="Views\Invoices\Delete.cshtml" />
+    <Content Include="Views\Invoices\Details.cshtml" />
+    <Content Include="Views\Invoices\Edit.cshtml" />
+    <Content Include="Views\Invoices\Index.cshtml" />
+    <Content Include="Views\InvoiceDetails\Create.cshtml" />
+    <Content Include="Views\InvoiceDetails\Delete.cshtml" />
+    <Content Include="Views\InvoiceDetails\Details.cshtml" />
+    <Content Include="Views\InvoiceDetails\Edit.cshtml" />
+    <Content Include="Views\InvoiceDetails\Index.cshtml" />
+    <Content Include="Views\Invoices\CreateWithTransaction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -425,6 +451,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604190333031_AddRelationships1.resx">
       <DependentUpon>201604190333031_AddRelationships1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605031943163_AddInvoceTable.resx">
+      <DependentUpon>201605031943163_AddInvoceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605031959182_AddInvoceDetailTable.resx">
+      <DependentUpon>201605031959182_AddInvoceDetailTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

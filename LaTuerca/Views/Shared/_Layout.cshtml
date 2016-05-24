@@ -34,8 +34,12 @@
         </footer>
     </div>
 
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="@Url.Content("~/Scripts/typehead.js")"></script>
+    <script src="@Url.Content("~/Scripts/custom.js")"></script>
+    
 </body>
 </html>

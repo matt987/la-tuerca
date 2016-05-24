@@ -39,5 +39,9 @@ namespace LaTuerca.Models
         public System.Data.Entity.DbSet<LaTuerca.Models.Proveedor> Proveedors { get; set; }
 
         public System.Data.Entity.DbSet<LaTuerca.Models.Repuesto> Repuestoes { get; set; }
+
+        public System.Data.Entity.DbSet<LaTuerca.Models.Invoice> Invoices { get; set; }
+
+        public System.Data.Entity.DbSet<LaTuerca.Models.InvoiceDetail> InvoiceDetails { get; set; }
     }
 }
